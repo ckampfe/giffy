@@ -39,7 +39,7 @@ describe ArgumentParser do
         args = ["-i", "nice.mp4"]
         expect(ArgumentParser.parse(args, output)).to eql(
           { :input_file => "nice.mp4",
-            :duration => "5",
+            :duration => "3",
             :start_time => "00:00:00",
             :output_file => "animation.gif"
           }
@@ -68,7 +68,7 @@ describe ArgumentParser do
 
         expect(ArgumentParser.parse(args, output)).to eql(
           { :input_file  => "dog.mp4",
-            :duration    => "5",
+            :duration    => "3",
             :start_time  => "00:00:00",
             :output_file => "bangerang.gif"
           }
