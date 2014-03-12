@@ -6,3 +6,5 @@ librbs = File.join(lib, "*.rb")
 Dir[librbs].each { |file| require File.join(lib, File.basename(file, ".rb")) }
 
 options = ArgumentParser.parse(ARGV, STDOUT)
+
+Splitter.make_pngs(options)
