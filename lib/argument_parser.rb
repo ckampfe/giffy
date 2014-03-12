@@ -42,8 +42,8 @@ class ArgumentParser
       raise "Please supply an args file: '-i YOUR_FILE.mp4'"
     end
 
-    if ARGV.length > 0
-      options[:output_file] = ARGV.shift
+    if args.length > 0
+      options[:output_file] = args.shift
     end
 
     options
