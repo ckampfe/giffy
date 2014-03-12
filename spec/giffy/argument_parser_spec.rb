@@ -48,7 +48,7 @@ describe ArgumentParser do
     end
 
     context "with given start time and duration" do
-      it "accounts for them" do
+      it "parses them" do
         output = double('output')
         args = ["-i", "nice.mp4", "-s", "00:10:24", "-t", "2"]
         expect(ArgumentParser.parse(args, output)).to eql(
