@@ -46,6 +46,15 @@ describe ArgumentParser do
         )
       end
     end
+
+    context "with given start time and duration" do
+      it "accounts for them" do
+        output = double('output')
+        args = ["-i", "nice.mp4", "-s", "00:10:24", "-t", "2"]
+        expect(ArgumentParser.parse(args, output)).to eql(
+          { :input_file => "nice.mp4",
+            :duration => "2",
+            :start_time => "00:10:24",
             :output_file => "animation.gif"
           }
         )
