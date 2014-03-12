@@ -14,7 +14,7 @@ class ArgumentParser
 
       # defaults
       options[:start_time]  = "00:00:00"
-      options[:duration]    = 5
+      options[:duration]    = "5"
       options[:output_file] = "animation.gif"
 
       opts.on("-i", "--args FILE", "args_exampe.mp4") do |i|
