@@ -33,14 +33,19 @@ describe ArgumentParser do
       end
     end
 
-    context "with no given output file" do
-      it "falls back to the default" do
+    context "with no given optional arguments" do
+      it "falls back to defaults" do
         output = double('output')
-        args = ["-i", "nice.mp4", "-s", "00:01:42", "-t", "3"]
+        args = ["-i", "nice.mp4"]
         expect(ArgumentParser.parse(args, output)).to eql(
           { :input_file => "nice.mp4",
-            :start_time => "00:01:42",
-            :duration => "3",
+            :duration => "5",
+            :start_time => "00:00:00",
+            :output_file => "animation.gif"
+          }
+        )
+      end
+    end
             :output_file => "animation.gif"
           }
         )
