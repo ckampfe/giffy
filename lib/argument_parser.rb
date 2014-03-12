@@ -18,7 +18,7 @@ class ArgumentParser
       options[:output_file] = "animation.gif"
 
       opts.on("-i", "--args FILE", "args_exampe.mp4") do |i|
-        options[:args_file] = i
+        options[:input_file] = i
       end
 
       opts.on("-s", "--start [HH:MM:SS]",
@@ -38,7 +38,7 @@ class ArgumentParser
 
     opt_parser.parse!(args)
 
-    unless options[:args_file]
+    unless options[:input_file]
       raise "Please supply an args file: '-i YOUR_FILE.mp4'"
     end
 
