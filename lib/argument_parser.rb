@@ -7,7 +7,7 @@ class ArgumentParser
     opt_parser = OptionParser.new do |opts|
       opts.banner = "
       Usage: giffy -i=INPUT [options] [animation.gif]
-      Example: giffy -i awesome.mp4 -s 00:05:09 -t cool.gif
+      Example: giffy -i awesome.mp4 -s 00:05:09 -t 2 cool.gif
 
       Options:
       "
