@@ -13,6 +13,6 @@ options:
 ```
 -i, --input FILE
 -s, --start [HH:MM:SS] default=00:00:00
--t, --duration [SECONDS] default=5
+-t, --duration [SECONDS] default=3
 -h, --help  display help
 ```
