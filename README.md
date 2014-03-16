@@ -2,7 +2,7 @@ giffy
 =====
 
 You want to make animated gifs. You don't want to mess around for 5 hours
-with ffmpeg and imagemagicks' arcana. Enter giffy.
+with ffmpeg and imagemagick's arcana. Enter giffy.
 
 giffy depends on [ffmpeg](http://ffmpeg.org/) and [imagemagick](http://www.imagemagick.org/), so please install them before attempting use. I recommend [homebrew](http://brew.sh/).
 
