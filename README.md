@@ -1,7 +1,7 @@
 giffy
 =====
 
-easily make animate gifs
+easily make animated gifs
 
 example:
 
