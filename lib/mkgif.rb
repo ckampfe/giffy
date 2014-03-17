@@ -48,7 +48,7 @@ class Mkgif
     end
 
     puts "culling frames to reduce file size..."
-    pngs.count > 40 ? pngs.select(&every_third) : pngs.select(&every_other)
+    pngs.count > 70 ? pngs.select(&every_third) : pngs.select(&every_other)
   end
 
   def self.convert_to_gifs(pngs)
